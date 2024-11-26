@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+
+    <title>Simple FAQ | devChallenges.io</title>
+
+    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        text-decoration: none;
+      }
+      a{
+        text-decoration: none;
+      }
+      p{
+        margin-bottom: 15px;
+      }
+      ol{
+        margin-left: 15px;
+        margin-bottom: 15px;
+      }
+      ul{
+        margin-left: 15px;
+        margin-bottom: 15px;
+      }
+      li{
+        margin-bottom: 10px;
+        line-height: 2;
+      }
+      h1{
+        font-size: 36px;
+        margin-bottom: 15px;
+      }
+      h2{
+        margin-bottom: 30px;
+      }
+      .contenido-principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas: 
+          "header"
+          "content1"
+          "content2"  
+        ;
+      }
+      .header{
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .content1{
+        background-color: #f9fafc;
+        grid-area: content1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+      }
+      .content2{
+        background-color: #f9fafc;
+        grid-area: content2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+      }
+      .div1{
+        max-width: 500px;
+        border-bottom: 1px solid;
+        padding: 2%;
+      }
+      .div2{
+        max-width: 500px;
+        padding: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="contenido-principal">
+      <section class="header">
+        <h1> Frequently Asked Questions</h1>
+      
+        <p> Browse through the most frequently asked questions</p>
+      </section> 
+
+      <section class="content1">
+        <div class="div1">
+          <h2>How can I track my order?</h2>
+
+            <p>You can track your order using the following steps:</p>
+            <ol>
+              <li>Go to the Order <a href="#">Tracking page.</a></li>
+
+              <li> Enter your order number and email address.</li>
+
+              <li>Click on the Track Order button to view the current status of your shipment.</li>
+            </ol>
+            
+          
+          <p> If you encounter any issues, please visit our <a href="#"> Help Center.</a></p>
+
+        </div>
+        
+      
+      </section>
+
+      <section class="content2">
+        <div class="div2">
+          <h2>What is your return policy?</h2>
+      
+            <p>We offer a 30-day return policy on most items. Here are some key points</p>
+          
+          <ul>
+            <li><strong>Items must be in original condition:</strong> Unworn, unused, and unwashed.</li>
+            <li><strong>Include original packaging and tags:</strong> All items should be returned with their original packaging and tags.</li>
+            <li><strong>Proof of purchase:</strong> A receipt or proof of purchase is required.</li>
+          </ul>
+           <p> For more detailed information, read our full <a href="#"> Return Policy.</a></p>
+
+        </div>
+               
+      </section>
+    </main>
+     
+    <div class="author-info">
+      Coded by <a href="#">Carlos Paez</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </div>
+  </body>
+</html>
